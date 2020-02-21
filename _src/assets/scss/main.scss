@@ -1,5 +1,10 @@
-@import "core/settings";
-@import "components/page";
-@import "components/header";
-@import "components/links";
-@import "components/footer";
+@import "core/reset";
+@import "utils/variables";
+@import "utils/mixins";
+@import "layouts/structure";
+@import "layouts/wrapped";
+@import "layouts/header";
+@import "layouts/hero";
+@import "layouts/main";
+@import "layouts/reasons";
+@import "layouts/footer";

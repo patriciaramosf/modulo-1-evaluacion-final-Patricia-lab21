@@ -1,0 +1,39 @@
+.hero{
+    top:0px;
+    height:100vh;
+    background-image: url(../images/cover.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    .elements{
+        display:flex;
+        flex-direction: column;
+        justify-content:bottom;
+        align-items: center;
+        text-align: center;
+        padding-top:500px;
+        color:$ColorTitle;
+        &--title{
+            text-transform: uppercase;
+            padding:10px;
+            font-size: $FontSizeTitle;
+        }
+        &--p{
+            font-size:$FontSizeSubtitleHero;
+        }
+        &--button__circle{
+            width: 45px;
+            height: 45px;
+            border-radius: 22.5px;
+            background-color: white;
+            color:$ColorButtonGeneral;
+            margin:15px;
+            img{
+                left:50%;
+                margin-left:0px;
+                top:-50%;
+                margin-top:8px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.main{
+margin-top:5%;
+
+    .tips{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+        &--small{
+            color:$colorSmall;
+            padding-bottom: 3%;
+        }
+        &--title{
+            padding-bottom:6%;
+            font-size: $FontSizeSubtitle;
+            font-weight: bold;
+        }
+        &--p{
+           line-height: 2;
+           font-size: $FontSizeGeneral;
+           padding-bottom: 6%;
+           color:$colorMain;
+        }
+        &--button{
+            width: 70px;
+            height: 39px;
+            border-radius: 22.5px;
+            border: solid 2px #f26002;
+            background-color:transparent;
+            color:#f26002;
+        }
+}
+}

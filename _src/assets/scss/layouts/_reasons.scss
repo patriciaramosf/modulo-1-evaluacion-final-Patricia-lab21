@@ -1,0 +1,43 @@
+.reasons{
+    background-color:$ColorBAckgroundReasons;
+    margin-top: 50px;
+    height:70vh;
+}
+    .box{
+    padding-top:30px;
+
+        .reasons__title{
+            font-size: $FontSizeSubtitle;
+            text-align:center;
+            margin-bottom:10%;
+            font-weight: bold;
+
+        }
+    }
+.box--items{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap:10%;
+    justify-content: center;
+}
+.item{
+       padding:10px;
+       strong{
+           font-weight: bold;
+       }
+}
+.subtitle{
+        padding-top:10px;
+    }
+.button-orange{
+  @include  buttonOrange;
+  font-size: $FontSizeButton;
+}
+
+/* @media all and (min-width:760px){
+    .box--items{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} */

@@ -1,22 +1,27 @@
 .hero{
-    top:0px;
     height:100vh;
     background-image: url(../images/cover.jpg);
     background-position: top;
     background-repeat: no-repeat;
-    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    position: relative;
+
     
     .elements{
         display:flex;
         flex-direction: column;
-        justify-content:bottom;
         align-items: center;
         text-align: center;
-        padding-top:500px;
+        position:absolute;
+        top:60%;
+
         color:$ColorTitle;
         &--title{
             text-transform: uppercase;
-            padding:10px;
+            padding:20px;
             font-size: $FontSizeTitle;
         }
         &--p{
@@ -28,10 +33,11 @@
             border-radius: 22.5px;
             background-color: white;
             color:$ColorButtonGeneral;
-            margin-top:10%;
             display:flex;
             justify-content: center;
             align-items:center;
+            margin-top: 5%;
+            margin-bottom:5%;
         }
     }
 }

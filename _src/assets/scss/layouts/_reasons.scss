@@ -1,7 +1,7 @@
 .reasons{
     background-color:$ColorBAckgroundReasons;
     margin-top: 50px;
-    height:70vh;
+    position:relative;
 }
     .box{
     padding-top:30px;
@@ -17,7 +17,7 @@
 .box--items{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     text-align: center;
     grid-gap:6%;
     justify-content: center;
@@ -44,5 +44,7 @@
 /* @media all and (min-width:760px){
     .box--items{
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
     }
-} */
+}
+ */

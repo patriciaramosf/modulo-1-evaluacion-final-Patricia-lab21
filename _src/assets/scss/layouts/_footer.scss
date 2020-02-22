@@ -1,6 +1,7 @@
 .footer{
     background-color: $ColorBackgroundFooter;
     position:relative;
+
     .footer__button{
         @include buttonSymbols;
         position:absolute;

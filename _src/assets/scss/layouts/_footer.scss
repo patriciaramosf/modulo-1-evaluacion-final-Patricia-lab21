@@ -2,9 +2,9 @@
     background-color: $ColorBackgroundFooter;
     position:relative;
         @include forTablet{
-            height:26vh;
+            height:45%;
             @include forPC{
-                height:20vh;
+                height:35%;
         }
         }
 

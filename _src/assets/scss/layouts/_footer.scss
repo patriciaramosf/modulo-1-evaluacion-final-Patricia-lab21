@@ -1,6 +1,12 @@
 .footer{
     background-color: $ColorBackgroundFooter;
     position:relative;
+        @include forTablet{
+            height:26vh;
+            @include forPC{
+                height:20vh;
+        }
+        }
 
     .footer__button{
         @include buttonSymbols;
@@ -17,28 +23,44 @@
         text-align: center;
         color:white;
         @include forTablet{
-            flex-direction: row-reverse;
+            flex-direction: row;
             text-align:left;
+            justify-content: space-around;
+            
+            
+            
         }
             .articles{
                 margin-top: 60px;
-                margin-bottom:10%;
+                margin-bottom:20px;
                 text-transform: uppercase;
                 @include forTablet{
-                    margin-top: 45px;
-                    margin-bottom: 45px;
+                    
+                    order:2;
                 }
+                    @include forPC{
+                        margin-left:40px;
+                        margin-right:40px;
+                    }
             }
     }
 }
+
+
 .articles{
-    margin-top:8%;
     .article{
         padding:5px;
-    }
+    
     a{
         color:white;
-    }
+}
+}
+}
+
+.twitters{
+    @include forTablet{
+        order:3;
+}
 }
 .twitter{
     text-transform: uppercase;
@@ -56,6 +78,8 @@
     @include forTablet{
         justify-content: left;
         align-items: flex-start;
+        order:1;
+        
     }
     small{
         padding:5px;

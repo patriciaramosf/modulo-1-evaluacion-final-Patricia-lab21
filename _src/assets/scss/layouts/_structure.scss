@@ -21,5 +21,9 @@ body{
         @include forTablet{
             margin-left:40px;
             margin-right:40px;
+                @include forPC{
+                    margin-left:85px;
+                    margin-right:85px;
+            }
 }
 }

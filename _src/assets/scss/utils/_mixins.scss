@@ -14,3 +14,15 @@
     color:$ColorButtonGeneral;
     margin:15px;
   }
+
+  @mixin forTablet {
+    @media all and (min-width:$tablet){
+      @content
+    }
+  }
+
+  @mixin forPC {
+    @media all and (min-width:$PC){
+      @content
+    }
+  }

@@ -2,49 +2,82 @@
     background-color:$ColorBAckgroundReasons;
     margin-top: 50px;
     position:relative;
-}
+
     .box{
     padding-top:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+        @include forTablet{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
         .reasons__title{
             font-size: $FontSizeSubtitle;
             text-align:center;
             margin-bottom:10%;
-            font-weight: bold;
-
+            font-family:$FontFamilyTitle;
+            margin-top:30px;
+            margin-bottom:45px;
+            @include forPC{
+                margin-top:60px;
+            }
         }
     }
+
+
 .box--items{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     grid-gap:6%;
     justify-content: center;
-}
-.item{
+        @include forTablet{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:1fr 1fr;
+        }
+
+
+    .item{
        padding:10px;
-       strong{
-           font-weight: bold;
-       }
-}
-.subtitle{
-        padding-top:10px;
+        @include forTablet{
+            text-align: center;
+        }
     }
-.button-orange{
-  @include  buttonOrange;
-  font-size: $FontSizeButton;
-  margin-top:10px;
-  &:hover{
-      color:$ColorButtonGeneral;
-      background-color: white;
-  }
 }
 
-/* @media all and (min-width:760px){
-    .box--items{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:1fr 1fr 1fr;
-    }
+
+.title{
+    font-family: $FontFamilyTitle;
+    font-weight: bold;
 }
- */
+.subtitle{
+    padding-top:14px;
+    text-align: center;
+}
+
+.box_button{
+    margin-bottom:60px;
+    margin-top:-20%;
+     @include forTablet{
+        margin-top:-10%;
+     }
+
+        .button-orange{
+            @include  buttonOrange;
+            font-size: $FontSizeButton;
+                &:hover{
+                color:$ColorButtonGeneral;
+                background-color: white;
+  }
+
+} 
+}
+

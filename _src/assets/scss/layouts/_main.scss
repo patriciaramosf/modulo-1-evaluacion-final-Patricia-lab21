@@ -13,26 +13,35 @@ margin-top:5%;
         &--title{
             padding-bottom:6%;
             font-size: $FontSizeSubtitle;
+            font-family:$FontFamilyTitle;
             font-weight: bold;
             margin-right:20%;
+                @include forTablet{
+                    padding-bottom:4%;
         }
+    }
         &--p{
            line-height: 2;
            font-size: $FontSizeGeneral;
-           padding-bottom: 6%;
+           padding-bottom: 45px;
            color:$colorMain;
-        }
+                @include forTablet{
+                    line-height:1.5;
+                    padding-bottom: 60px;
+                }
+            }
         &--button{
-            width: 70px;
-            height: 39px;
+            width: 91px;
+            height: 45px;
             border-radius: 22.5px;
-            border: solid 2px $ColorButtonGeneral;
             background-color:transparent;
+            border: solid 2px $ColorButtonGeneral;
             color:$ColorButtonGeneral;
                 &:hover{
+                    background-color: $ColorButtonGeneral;
                     color:white;
-                    background-color:$ColorButtonGeneral;
                 }
         }
-}
-}
+            }
+        }
+    

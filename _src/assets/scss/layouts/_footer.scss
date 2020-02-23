@@ -5,7 +5,7 @@
     .footer__button{
         @include buttonSymbols;
         position:absolute;
-        left:50%;
+        left:50.3%;
         margin-left:-25px;
         top:-35px;
     }
@@ -15,11 +15,19 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        padding:40px;
         color:white;
+        @include forTablet{
+            flex-direction: row-reverse;
+            text-align:left;
+        }
             .articles{
+                margin-top: 60px;
                 margin-bottom:10%;
                 text-transform: uppercase;
+                @include forTablet{
+                    margin-top: 45px;
+                    margin-bottom: 45px;
+                }
             }
     }
 }
@@ -44,6 +52,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom:45px;
+    @include forTablet{
+        justify-content: left;
+        align-items: flex-start;
+    }
     small{
         padding:5px;
     }

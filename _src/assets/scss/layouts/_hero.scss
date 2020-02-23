@@ -1,13 +1,17 @@
 .hero{
-    height:100vh;
     background-image: url(../images/cover.jpg);
     background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
     display:flex;
     flex-direction: column;
     justify-content:flex-end;
     align-items: center;
     position: relative;
+    height:100vh;
+    @include forTablet{
+        height:72vh;
+    }
 
     
     .elements{
@@ -15,18 +19,40 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        position:absolute;
-        top:60%;
+        margin-bottom:175px;
+        
+        @include forTablet{
+            margin-bottom:40px;
+        }
+        @include forPC{
+            margin-bottom:13px;
+        }
+
 
         color:$ColorTitle;
         &--title{
+            line-height: 55px;
+            font-family: 'Roboto Slab';
             text-transform: uppercase;
-            padding:20px;
+            margin-bottom:10px;
+            
             font-size: $FontSizeTitle;
+                @include forTablet{
+                    font-size:$FontSizeTitleHero;
+                    line-height: 106px;
+                    margin-bottom:20px;
+                        @include forPC{
+                            font-size:$FontSizeTitleHeroPC;
+                            line-height: 132px;
+                        }
+            }
         }
         &--p{
             font-size:$FontSizeSubtitleHero;
+            @include forTablet{
+                    font-size: $FontSizeSubtitle;
         }
+    }
         &--button__circle{
             width: 45px;
             height: 45px;
@@ -36,8 +62,7 @@
             display:flex;
             justify-content: center;
             align-items:center;
-            margin-top: 5%;
-            margin-bottom:5%;
+            margin-top:40px;
         }
     }
 }

@@ -1,3 +1,6 @@
+$FontFamilyTitle:'Roboto Slab';
+$FontFamilyGeneral:'Roboto';
+
 /* colors */
 $ColorTitle:white;
 $colorSmall:#8ccbea;
@@ -7,9 +10,17 @@ $ColorButtonGeneral:#f26002;
 $ColorBAckgroundReasons:#eff9ff;
 $ColorBackgroundFooter:#304268;
 
-/* fonts */
+/* fonts mobile*/
 $FontSizeGeneral:18px;
 $FontSizeTitle:42px;
 $FontSizeSubtitle:24px;
 $FontSizeSubtitleHero:16px;
 $FontSizeButton:20px;
+/* fonts tablet */
+$FontSizeTitleHero:80px;
+$FontSizeTitleHeroPC:100px;
+
+
+/* mediaqueries */
+$tablet:768px;
+$PC:1024px;

@@ -1,10 +1,25 @@
-@mixin buttonOrange(){
-    height: 40px;
-    width:180px;
+@mixin buttonOrangeM(){
+    height: 45px;
+    width:184px;
     border-radius: 22.5px;
     background-color:$ColorButtonGeneral;
     color:white;
   }
+  @mixin buttonOrangeT(){
+    height: 45px;
+    width:210px;
+    border-radius: 22.5px;
+    background-color:$ColorButtonGeneral;
+    color:white;
+  }
+  @mixin buttonOrangePC(){
+    height: 45px;
+    width:255px;
+    border-radius: 22.5px;
+    background-color:$ColorButtonGeneral;
+    color:white;
+  }
+
 
   @mixin buttonSymbols(){
     width: 45px;

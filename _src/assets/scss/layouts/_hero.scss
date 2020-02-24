@@ -1,6 +1,6 @@
 .hero{
     background-image: url(../images/cover.jpg);
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display:flex;
@@ -9,34 +9,31 @@
     align-items: center;
     position: relative;
     height:100vh;
-    @include forTablet{
-        height:72vh;
-    }
 
-    
     .elements{
         display:flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         margin-bottom:175px;
-        
-        @include forTablet{
-            margin-bottom:40px;
-        }
-        @include forPC{
-            margin-bottom:13px;
-        }
-
-
         color:$ColorTitle;
+        
+            @include forTablet{
+                margin-bottom:40px;
+            }
+                @include forPC{
+                    margin-bottom:13px;
+                }
+
+
+        
         &--title{
             line-height: 55px;
             font-family: 'Roboto Slab';
             text-transform: uppercase;
             margin-bottom:10px;
-            
             font-size: $FontSizeTitle;
+            
                 @include forTablet{
                     font-size:$FontSizeTitleHero;
                     line-height: 106px;

@@ -5,9 +5,10 @@ body{
 .container{
     padding-left:15px;
     padding-right:15px;
+    
         @include forTablet{
-    padding-left:40px;
-    padding-right:40px;
+            padding-left:40px;
+            padding-right:40px;
 
             @include forPC{
                 padding-left:275px;
@@ -18,9 +19,11 @@ body{
 .container-reasons{
     margin-left:70px;
     margin-right:70px;
+
         @include forTablet{
             margin-left:40px;
             margin-right:40px;
+
                 @include forPC{
                     margin-left:85px;
                     margin-right:85px;

@@ -2,6 +2,7 @@
     background-color: $ColorBackgroundFooter;
     position:relative;
     font-size:$FontSizeSubtitleHero;
+    height:420px;
         @include forTablet{
             height:45%;
             @include forPC{
@@ -15,7 +16,12 @@
         left:50.3%;
         margin-left:-25px;
         top:-35px;
+        animation:pulse;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        
     }
+
     .footer__box{
         display:flex;
         flex-direction: column;
@@ -70,7 +76,6 @@
 }
 .copy{
     display:flex;
-    margin-bottom:45px;
     margin-top:20px;
     flex-direction: column;
     align-items: center;
@@ -85,5 +90,21 @@
     }
     small{
         padding:5px;
+    }
+}
+
+
+@keyframes pulse {
+    from {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    50% {
+        transform : scale(0.75);
+        opacity   : 0.75;
+    }
+    to {
+        transform : scale(1);
+        opacity   : 1;
     }
 }
